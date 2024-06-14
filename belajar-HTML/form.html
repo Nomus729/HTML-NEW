@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <hr>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Belajar Form</title>
+      <link rel="icon" href="Cover_06.jpg" />
+      <h1 style="font-size: 5vw">Belajar HTML Form</h1>
+   </head>
+   <body>
+      <form
+         name="registrasi"
+         action="form.html"
+         enctype="application/x-www-form-urlencoded"
+         method="get"
+         target="_self"
+         >
+         <fieldset>
+            <legend>Identitas</legend>
+            <label for="Pencarian">Nama :</label> <br />
+            <input type="text" name="Nama" id="Pencarian" /> <br />
+            <label for="umur">Umur:</label> <br />
+            <input type="number" name="Umur" id="umur" /> <br />
+            <label for="alamat">Alamat :</label> <br />
+            <input type="text" name="Alamat" id="alamat" /> <br />
+            <br />
+            <label for="Email" style="font-size: 1vw; font-weight: bold"
+               >Masukkan Email :</label
+               >
+            <br />
+            <input type="email" name="Email" id="Email" />
+         </fieldset>
+         <br />
+         <input type="button" value="Click Me" onclick="alert('Hallo')" />
+         <br />
+         <fieldset>
+            <legend>Sekolah</legend>
+            <br />
+            <strong>Jenjang Sekolah :</strong><br />
+            <input type="checkbox" value="SMK" name="Sekolah" id="SMK" />
+            <label for="SMK">SMK</label>
+            <br />
+            <input type="checkbox" value="SMA" name="Sekolah" id="SMA" />
+            <label for="SMA">SMA</label>
+            <br />
+            <input type="checkbox" value="MAN" name="Sekolah" id="MAN" />
+            <label for="MAN">MAN</label>
+            <br />
+            <br />
+            <strong style="font-size: 1vw"
+               ><label for="warna">Pilih Warna : </label></strong
+               >
+            <br />
+            <input type="color" name="color" id="warna" value="#6bc2a3" />
+         </fieldset>
+         <fieldset>
+            <legend><h1 style="text-align: center;">Waktu</h1></legend>
+            <br /><br />
+            <label for="tanggal"
+               ><strong style="font-size: 1vw"
+               >Masukkan Tanggal Lahir :
+            </strong></label
+               >
+            <br />
+            <input
+               type="date"
+               name="tanggalLahir"
+               id="tanggal"
+               value="2000-02-20"
+               min="2000-01-01"
+               max="2023-12-31"
+               />
+            <br />
+            <br />
+            <strong style="font-size: 1vw"
+               ><label for="date-time">Masukkan Tanggal &#38; Waktu :</label></strong
+               >
+            <br />
+            <input
+               type="datetime-local"
+               name="Waktu&aTanggal"
+               id="date-time"
+               value="2000-01-01T12:00"
+               min="2000-01-01T00:00"
+               max="2050-12-31T24:00"
+               />
+            <br />
+            <br />
+            <label for="bulan-tahun"
+               ><strong style="font-size: 1vw"
+               >Masukkan Bulan &#38; Tahun :</strong
+               ></label
+               >
+            <br />
+            <input
+               type="month"
+               name="Buland&Tahun"
+               id="bulan-tahun"
+               value="2000-10"
+               />
+            <br />
+            <br />
+            <label for="time"
+               ><strong style="font-size: 1vw"
+               >Masukkan Jam &#38; Menit :</strong
+               ></label
+               >
+            <br />
+            <input type="time" name="Jam&Menit" id="time" value="22:28" /><br /><br />
+            <label for="mingguan"
+               ><strong style="font-size: 1vw">Minggu dalam Tahun :</strong></label
+               ><br />
+            <input type="week" name="mingguan" id="mingguan" value="2023-W23" />
+            <br />
+         </fieldset>
+         <input type="hidden" name="User" value="rakan" />
+         <label for="Nama" style="font-size: 1vw; font-weight: bold">Usia : </label
+            ><br />
+         <input type="number" name="Usia" id="Nama" /><br />
+         <label for="pw" style="font-size: 1vw; font-weight: bold"
+            >Password anda :</label
+            ><br />
+         <input type="password" name="Password" id="pw" />
+         <br />
+         <p style="font-size: 1vw; font-weight: bold">Pilih Negara :</p>
+         <input type="radio" name="negara" id="negara1" value="Indonesia" />
+         <label for="negara1">Indonesia</label>
+         <br />
+         <input type="radio" name="negara" id="negara2" value="Malaysia" />
+         <label for="negara2">Malaysia</label>
+         <br />
+         <input type="radio" name="negara" id="negara3" value="Singapura" />
+         <label for="negara3">Singapura</label>
+         <br />
+         <input type="radio" name="negara" id="negara4" value="India" />
+         <label for="negara4">India</label> <br />
+         <label for="Volume" style="font-size: 1vw; font-weight: bold"
+            >VOLUME :</label
+            >
+         <br />
+         <strong>1</strong>
+         <input
+            type="range"
+            name="Volume"
+            id="volume"
+            min="1"
+            max="100"
+            value="0"
+            step="5"
+            />
+         <strong>100</strong>
+         <br />
+         <label for="telpon" style="font-size: 1vw; font-weight: bold"
+            >No.Telepone :</label
+            >
+         <br />
+         <input
+            type="tel"
+            name="Telepone"
+            id="telpon"
+            value="+62"
+            pattern="(+62)[0-9]{2,20}"
+            />
+         <br />
+         <label for="kelompok" style="font-size: 1vw; font-weight: bold"
+            >Kelompok :
+         </label>
+         <br />
+         <textarea name="AnggotaKelompok" id="kelompok" cols="50" rows="5">
+Anggota :</textarea
+            >
+         <br>
+         <label for="kota">Kota : 
+         <label>
+            <br>
+            <select name="kota" id="kota">
+               <optgroup label="Jawa Barat">
+                  <option value="Bandung">Bandung</option>
+                  <option value="Subang">Subang</option>
+                  <option value="Bekasi">Bekasi</option>
+               </optgroup>
+               <optgroup label="Jawa Tengah">
+                  <option value="Semarang">Semarang</option>
+                  <option value="Surakarta">Surakarta</option>
+                  <option value="Pekalongan">Pekalongan</option>
+               </optgroup>
+               <optgroup label="Kalimantan Tengah">
+                  <option value="Katingan">Katingan</option>
+                  <option value="Palangkaraya">Palangkaraya</option>
+                  <option value="Seruyan">Seruyan</option>
+               </optgroup>
+            </select>
+            <br>
+         <label for="Hobi">Hobimu :</label><br>
+         <input type="text" name="hobiii" id="Hobi" list="hobbyy"> <br>
+         <datalist id="hobbyy">
+            <option value="Membaca">Membaca</option>
+            <option value="Soccer">Soccer</option>
+            <option value="Jogging">Jogging</option>
+         </datalist>
+         <br /><br />
+         <button type="submit">Kirim</button>
+         <button type="reset">Reset</button><br />
+      </form>
+   </body>
+</html>
